@@ -28,20 +28,89 @@ body {
 }
 
 .botao-entrar {
-    border:0;
+    border: 0;
     height: 40px;
     width: 90px;
     font-size: 18px;
     font-weight: 500;
-    background-color: brown;
+    background-color: #BB0106;
     color: #fff;
     border: none;
     border-radius: 10px;
 }
+
 .botao-entrar:hover {
-    background-color: rgb(201, 50, 50);
+    background-color:#c22d32;
 }
 
 .aviso {
     font-size: 25px;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  
+}
+.selecionar-jogo {
+    height: 400px;
+    width: 410px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.secao {
+    height: 150px;
+    width: 400px;
+    margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.titulo {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.texas,
+.omaha,
+.five {
+    height: 60px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #F0F0F0;
+}
+.jogadores5,
+.jogadores9 {
+    height: 60px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #F0F0F0;
+}
+.avancar {
+    height: 40px;
+    width: 340px;
+    background-color: #27A749;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; 
+}
+
+.avancar:hover {
+    background-color: #30b353;
 }
