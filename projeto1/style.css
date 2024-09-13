@@ -67,9 +67,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    
 }
 
-.secao {
+/*.secao {
     height: 150px;
     width: 400px;
     margin-top: 20px;
@@ -77,6 +78,25 @@ body {
    flex-direction: column;
    align-items: center;
    justify-content: space-around;
+}*/
+
+.secao .opcoes {
+    display: flex;
+    width: 100%;
+}
+
+.secao .opcoes button {
+    width: 100%;
+    margin: 0 5px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.secao .opcoes button.selecionado, .avancar {
+    background-color: #28a745;
+    color: #fff;
 }
 
 .titulo {
@@ -95,6 +115,7 @@ body {
     border-radius: 5px;
     font-size: 14px;
     background-color: #F0F0F0;
+    cursor: pointer;
 }
 .jogadores5,
 .jogadores9 {
@@ -104,15 +125,17 @@ body {
     border-radius: 5px;
     font-size: 16px;
     background-color: #F0F0F0;
+    cursor: pointer;
 }
 .avancar {
-    height: 40px;
-    width: 340px;
+    height: 100%;
+    width: 100%;
     background-color: #27A749;
     color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 16px; 
+    cursor: pointer;
 }
 
 .avancar:hover {
@@ -120,16 +143,12 @@ body {
 }
 
 .loading-overlay {
-    height: 400px;
-    width: 410px;
-    background-color: #fff;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 40px;
-    background-color: #333333;
+    display: flex;
+    color: #fff;
 
 }
 
