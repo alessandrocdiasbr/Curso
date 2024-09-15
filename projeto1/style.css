@@ -181,7 +181,7 @@ body {
     display: none;
 }
 
-@media (max-width) {
+@media (max-width: 600px) {
     .logo {
         height: 150px;
         margin-left: 10px;
