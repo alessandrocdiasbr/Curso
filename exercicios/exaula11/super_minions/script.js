@@ -1,4 +1,4 @@
-function toggleSuperman() {
+function toggleSuperman(minionElement) {
   const minion = document.querySelector(".minion");
-  minion.classList.toggle("superman");
+  minionElement.classList.toggle("superman");
 }
