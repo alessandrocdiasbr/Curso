@@ -1,10 +1,15 @@
 
-function perguntarIdade() {
-
-    const anoNascimento = Number(prompt('Qual o ano de nascimento?')); 
-
+function calcularIdade(anoNascimento) {
     const anoAtual = 2024;
     const idade = anoAtual - anoNascimento;
+    return idade; // o resultado que sera usado em algum lugar precisa ser guardado em um retorno. Quando for usar, chamo o valor, sempre com uma const
+}
+
+function perguntarIdade() {
+    const anoNascimento = Number(prompt('Qual o ano de nascimento?')); 
+    const idade = calcularIdade(anoNascimento);
+
+    
 
     // se idade for maior que 17
     if(idade > 17) {
@@ -24,6 +29,30 @@ function perguntarIdade() {
         paragrafo.classList.add('vermelho')
        
     }
+}
+
+function selecionarJogo(botao) {
+    //const botao = document.querySelector("." + jogo); // uso o "." para selecionar uma das classes, para isso, adiciono um novo paramentro dentro da função (variável), no exemplo: jogo. Usei concatenação de "." + jogo
+
+    const botaoSelecionadoAntes = document.querySelector(".tipo-jogo .selecionado");
+
+    if(botaoSelecionadoAntes !== null) { 
+        botaoSelecionadoAntes.classList.remove("selecionado"); // retornou null pq não foi selecionado antes, ele não vai achar.
+    }
+    
+    botao.classList.add("selecionado")
+}
+
+function selecionarJogadores(botao) {
+   // const botao = document.querySelector("." + jogadores);
+
+    const botaoSelecionadoAntes = document.querySelector(".qtd-jogadores .selecionado");
+
+    if(botaoSelecionadoAntes !== null) {
+        botaoSelecionadoAntes.classList.remove("selecionado");
+    }
+    
+    botao.classList.add("selecionado");
 }
 
 
