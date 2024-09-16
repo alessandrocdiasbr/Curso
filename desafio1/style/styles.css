@@ -55,6 +55,14 @@ header .subtitulo-logo p{
     flex-direction: column;
 }
 
+.sobremesa {
+    width: 414px;
+    height: 300px;
+    margin-top: 27px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+}
 .pratos {
     display: flex;
 }
@@ -76,6 +84,7 @@ header .subtitulo-logo p{
     flex-direction: column;
     border-radius: 9px;
     margin-left: 10px;    
+    cursor: pointer;
 }
 
 
@@ -135,6 +144,6 @@ footer button {
     color: #ffffff;
 }
 
-/*.selecionado {
+.selecionado {
     border: 5px solid #32b72f;
-}*/
+}
