@@ -67,6 +67,14 @@ header .subtitulo-logo p{
     display: flex;
 }
 
+.bebidas {
+    display: flex;
+}
+
+.sobremesas {
+    display: flex;
+}
+
 .titulo h1 {
     margin-bottom: 10px;
     font-size: 26px;
