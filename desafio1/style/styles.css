@@ -150,8 +150,14 @@ footer button {
     background-color: #cbcbcb;
     font-size: 20px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .selecionado {
     border: 5px solid #32b72f;
+}
+
+footer button .tudoescolhido {
+    background-color: #32b72f;
+    color: #ffffff;
 }

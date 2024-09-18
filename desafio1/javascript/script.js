@@ -2,8 +2,12 @@
 let prato = "";
 let bebida = "";
 let sobremesa = "";
+let pratoEscolhido = "";
+let bebidaEscolhida = "";
+let sobremesaEscolhida = "";
 
 function selecionarPrato(prato) {
+    pratoEscolhido = prato.innerHTML;
     const pratoSelecionado = document.querySelector(".pratos .selecionado");
     
     if(pratoSelecionado !== null) {
@@ -14,6 +18,7 @@ function selecionarPrato(prato) {
 }
 
 function selecionarBebida(bebida) {
+    bebidaEscolhida = bebida.innerHTML;
     const bebidaSelecionada = document.querySelector(".bebidas .selecionado");
 
     if(bebidaSelecionada !== null) {
@@ -24,6 +29,7 @@ function selecionarBebida(bebida) {
 }
 
 function selecionarSobremesa(sobremesa) {
+    sobremesaEscolhida = sobremesa.innerHTML;
     const sobremesaSelecionada = document.querySelector(".sobremesas .selecionado");
 
     if(sobremesaSelecionada !== null) {
@@ -32,3 +38,11 @@ function selecionarSobremesa(sobremesa) {
 
     sobremesa.classList.add("selecionado");
 }
+
+
+const selecao=document.querySelector(".prato .bebida .sobremesa")
+
+selecao.addEventListener("click", (evt)=> {
+    const el=evt.target
+    el.classList.add("tudoescolhido")
+})
