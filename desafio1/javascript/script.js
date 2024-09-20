@@ -1,48 +1,37 @@
-
-let prato = "";
-let bebida = "";
-let sobremesa = "";
 let pratoEscolhido = "";
 let bebidaEscolhida = "";
 let sobremesaEscolhida = "";
 
-function selecionarPrato(prato) {
-    pratoEscolhido = prato.innerHTML;
+function selecionarPrato(botao) {
+    pratoEscolhido = botao.innerhtml;
     const pratoSelecionado = document.querySelector(".pratos .selecionado");
     
     if(pratoSelecionado !== null) {
         pratoSelecionado.classList.remove("selecionado");
     }
 
-    prato.classList.add("selecionado");
+    botao.classList.add("selecionado");
 }
 
-function selecionarBebida(bebida) {
-    bebidaEscolhida = bebida.innerHTML;
+function selecionarBebida(botao) {
+    bebidaEscolhida = botao.innerhtml;
     const bebidaSelecionada = document.querySelector(".bebidas .selecionado");
 
     if(bebidaSelecionada !== null) {
         bebidaSelecionada.classList.remove("selecionado");
     }
 
-    bebida.classList.add("selecionado");
+    botao.classList.add("selecionado");
 }
 
-function selecionarSobremesa(sobremesa) {
-    sobremesaEscolhida = sobremesa.innerHTML;
+function selecionarSobremesa(botao) {
+    sobremesaEscolhida = botao.innerhtml;
     const sobremesaSelecionada = document.querySelector(".sobremesas .selecionado");
 
     if(sobremesaSelecionada !== null) {
         sobremesaSelecionada.classList.remove("selecionado");
     }
 
-    sobremesa.classList.add("selecionado");
+    botao.classList.add("selecionado");
 }
 
-
-const selecao=document.querySelector(".prato .bebida .sobremesa")
-
-selecao.addEventListener("click", (evt)=> {
-    const el=evt.target
-    el.classList.add("tudoescolhido")
-})
