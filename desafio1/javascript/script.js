@@ -32,3 +32,4 @@ function selecionarSobremesa(sobremesa) {
 
     sobremesa.classList.add("selecionado");
 }
+

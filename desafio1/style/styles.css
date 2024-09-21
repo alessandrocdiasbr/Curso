@@ -4,11 +4,12 @@ body {
     justify-content: center;
     font-family: "Roboto", sans-serif;
 }
+
 header {
     background-color: #cf2b2b;
     position: fixed;
     top: 0;
-    width: 414px;
+    min-width: 414px;
     height: 92px;
     color: #fff;
     display: flex;
@@ -142,7 +143,7 @@ footer {
    flex-direction: column;
 }
 
-footer button {
+.pedido {
     width: 364px;
     height: 61px;
     border-radius: 50px;
@@ -154,4 +155,18 @@ footer button {
 
 .selecionado {
     border: 5px solid #32b72f;
+}
+
+.pedido-escolhido {
+    background-color: #32b72f;
+    font-size: 20px;
+    color: #ffffff;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    border: none;
+}
+
+.escondido {
+    display: none;
 }
