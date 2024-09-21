@@ -1,29 +1,31 @@
+let pratoEscolhido = "";
+let bebidaEscolhida = "";
+let sobremesaEscolhida = "";
 
-let prato = "";
-let bebida = "";
-let sobremesa = "";
-
-function selecionarPrato(prato) {
+function selecionarPrato(botao) {
+    pratoEscolhido = botao.innerhtml;
     const pratoSelecionado = document.querySelector(".pratos .selecionado");
     
     if(pratoSelecionado !== null) {
         pratoSelecionado.classList.remove("selecionado");
     }
 
-    prato.classList.add("selecionado");
+    botao.classList.add("selecionado");
 }
 
-function selecionarBebida(bebida) {
+function selecionarBebida(botao) {
+    bebidaEscolhida = botao.innerhtml;
     const bebidaSelecionada = document.querySelector(".bebidas .selecionado");
 
     if(bebidaSelecionada !== null) {
         bebidaSelecionada.classList.remove("selecionado");
     }
 
-    bebida.classList.add("selecionado");
+    botao.classList.add("selecionado");
 }
 
-function selecionarSobremesa(sobremesa) {
+function selecionarSobremesa(botao) {
+    sobremesaEscolhida = botao.innerhtml;
     const sobremesaSelecionada = document.querySelector(".sobremesas .selecionado");
 
     if(sobremesaSelecionada !== null) {
@@ -31,5 +33,6 @@ function selecionarSobremesa(sobremesa) {
     }
 
     sobremesa.classList.add("selecionado");
+    botao.classList.add("selecionado");
 }
 
