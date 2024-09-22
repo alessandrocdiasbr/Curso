@@ -26,95 +26,87 @@
 
     <main>
 
-        <section id="pratos">
-            <div class="titulo-pedido">
-                <h2>Pratos</h2>
-            </div>
+        <div class="container">
+            <section id="pratos">
+                <div class="titulo-pedido">
+                    <h2>Primeiro, seu prato</h2>
+                </div>
+                <div class="opcoes-pratos">
+                    <button class="opcao" data-preco="25.00" onclick="selecionar('prato', this)">
+                        <img src="img/pf_frango.jpg" alt="">
+                        <h3 class="titulo-item" id="frango">Frango Yin Yang</h3>
+                        <h4 class="descricao-item">Acompanha salada, arroz, feijão e farofa</h4>
+                        <p class="preco-item">25.00</p>
+                    </button>
+                    <button class="opcao" data-preco="30.00" onclick="selecionar('prato', this)">
+                        <img src="img/pf_calabresa.png" alt="">
+                        <h3 class="titulo-item">PF Calabresa</h3>
+                        <h4 class="descricao-item">Acompanha arroz, feijão e fritas</h4>
+                        <p class="preco-item">30.00</p>
+                    </button>
+                    <button class="opcao" data-preco="20.00" onclick="selecionar('prato', this)">
+                        <img src="img/pf_carne.jpg" alt="">
+                        <h3 class="titulo-item">PF Boi</h3>
+                        <h4 class="descricao-item">Acompanha salada, arroz, feijão e ovo</h4>
+                        <p class="preco-item">20.00</p>
+                    </button>
+                </div>
+            </section>
+            <section id="bebidas">
+                <div class="titulo-pedido">
+                    <h2>Agora, sua bebida</h2>
+                </div>
+                <div class="opcoes-bebidas">
+                    <button class="opcao" data-preco="4.90" onclick="selecionar('bebida', this)">
+                        <img src="img/coca.png" alt="">
+                        <h3 class="titulo-item">Coquinha gelada</h3>
+                        <h4 class="descricao-item">Lata 350 ml</h4>
+                        <p class="preco-item">4.90</p>
+                    </button>
+                    <button class="opcao" data-preco="4.70" onclick="selecionar('bebida', this)">
+                        <img src="img/fanta.png" alt="">
+                        <h3 class="titulo-item">Fanta laranja</h3>
+                        <h4 class="descricao-item">Lata 550 ml</h4>
+                        <p class="preco-item">4.70</p>
+                    </button>
+                    <button class="opcao" data-preco="8.00" onclick="selecionar('bebida', this)">
+                        <img src="img/suco.png" alt="">
+                        <h3 class="titulo-item">Suco de laranja</h3>
+                        <h4 class="descricao-item">Jarra 500 ml</h4>
+                        <p class="preco-item">8.00</p>
+                    </button>
+                </div>
+            </section>
+            <section id="sobremesas">
+                <div class="titulo-pedido">
+                    <h2>Por fim, sua sobremesa</h2>
+                </div>
+                <div class="opcoes-sobremesas">
+                    <button class="opcao" data-preco="8.00" onclick="selecionar('sobremesa', this)">
+                        <img src="img/brownie.png" alt="">
+                        <h3 class="titulo-item">Brownie</h3>
+                        <h4 class="descricao-item">Sabor chocolate</h4>
+                        <p class="preco-item">8.00</p>
+                    </button>
+                    <button class="opcao" data-preco="9.00" onclick="selecionar('sobremesa', this)">
+                        <img src="img/pudim.jpg" alt="">
+                        <h3 class="titulo-item">Pudim</h3>
+                        <h4 class="descricao-item">Leite condensado</h4>
+                        <p class="preco-item">9.00</p>
+                    </button>
+                    <button class="opcao" data-preco="7.00" onclick="selecionar('sobremesa', this)">
+                        <img src="img/mouse.png" alt="">
+                        <h3 class="titulo-item">Mouse</h3>
+                        <h4 class="descricao-item">Sabor maracuja</h4>
+                        <p class="preco-item">7.00</p>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
 
-            <div class="opcoes-pratos">
-                <button class="opcao" data-preco="25.00" onclick="selecionar('prato', this)">
-                    <img src="img/pf_frango.jpg" alt="">
-                    <h3 class="titulo-item">Frango Yin Yang</h3>
-                    <h4 class="descricao-item">Acompanha salada, arroz e feijão</h4>
-                    <p class="preco-item">25.00</p>
-                </button>
-
-                <button class="opcao" data-preco="30.00" onclick="selecionar('prato', this)">
-                    <img src="img/pf_calabresa.png" alt="">
-                    <h3 class="titulo-item">PF Calabresa</h3>
-                    <h4 class="descricao-item">Acompanha salada, arroz e feijão</h4>
-                    <p class="preco-item">25.00</p>
-                </button>
-
-                <button class="opcao" data-preco="20.00" onclick="selecionar('prato', this)">
-                    <img src="img/pf_carne.jpg" alt="">
-                    <h3 class="titulo-item">PF Boi</h3>
-                    <h4 class="descricao-item">Acompanha salada, arroz e feijão</h4>
-                    <p class="preco-item">25.00</p>
-                </button>
-            </div>
-        </section>
-
-        <section id="bebidas">
-            <div class="titulo-pedido">
-                <h2>Bebidas</h2>
-            </div>
-
-            <div class="opcoes-bebidas">
-                <button class="opcao" data-preco="10.00" onclick="selecionar('bebida', this)">
-                    <img src="img/coca.png" alt="">
-                    <h3 class="titulo-item">Coquinha gelada</h3>
-                    <h4 class="descricao-item">Lata 350 ml</h4>
-                    <p class="preco-item">10.00</p>
-                </button>
-
-                <button class="opcao" data-preco="15.00" onclick="selecionar('bebida', this)">
-                    <img src="img/fanta.png" alt="">
-                    <h3 class="titulo-item">Fanta laranja</h3>
-                    <h4 class="descricao-item">Lata 550 ml</h4>
-                    <p class="preco-item">15.00</p>
-                </button>
-
-                <button class="opcao" data-preco="12.00" onclick="selecionar('bebida', this)">
-                    <img src="img/suco.png" alt="">
-                    <h3 class="titulo-item">Suco de laranja</h3>
-                    <h4 class="descricao-item">Jarra 500 ml</h4>
-                    <p class="preco-item">12.00</p>
-                </button>
-            </div>
-        </section>
-
-
-        <section id="sobremesas">
-            <div class="titulo-pedido">
-                <h2>Sobremesas</h2>
-            </div>
-
-            <div class="opcoes-sobremesas">
-                <button class="opcao" data-preco="8.00" onclick="selecionar('sobremesa', this)">
-                    <img src="img/brownie.png" alt="">
-                    <h3 class="titulo-item">Brownie</h3>
-                    <h4 class="descricao-item">Sabor chocolate</h4>
-                    <p class="preco-item">8.00</p>
-                </button>
-
-                <button class="opcao" data-preco="9.00" onclick="selecionar('sobremesa', this)">
-                    <img src="img/pudim.jpg" alt="">
-                    <h3 class="titulo-item">Pudim</h3>
-                    <h4 class="descricao-item">Leite condensado</h4>
-                    <p class="preco-item">9.00</p>
-                </button>
-
-                <button class="opcao" data-preco="7.00" onclick="selecionar('sobremesa', this)">
-                    <img src="img/mouse.png" alt="">
-                    <h3 class="titulo-item">Mouse</h3>
-                    <h4 class="descricao-item">Sabor maracuja</h4>
-                    <p class="preco-item">7.00</p>
-                </button>
-            </div>
-        </section>
-
-        <button id="fechar-pedido" disabled onclick="mostrarResumo()">Selecione os 3 itens para fechar pedido</button>
+    <footer>
+        <button id="fechar-pedido" disabled onclick="mostrarResumo()">Selecione os 3 itens <br> para fechar pedido</button>
 
         <div id="resumo-overlay" class="overlay" style="display: none;">
             <div class="resumo">
@@ -124,16 +116,12 @@
                 <p id="resumo-sobremesa"></p>
 
                 <p><strong><span id="resumo-total"></span></strong></p>
+                 
+                <div class="acoes"><button onclick="confirmarPedido()">Tudo certo, pode pedir!</button>
+                <a href="#" onclick="fecharResumo()">Cancelar</a></div>
             </div>
-
-            <div class="acoes">
-                <button onclick="confirmarPedido()">Tudo certo, pode pedir!</button>
-                <a href="#" onclick="fecharResumo()">Cancelar</a>
-            </div>
-
         </div>
-
-    </main>
+    </footer>
 
     <script src="script.js"></script>
 </body>
